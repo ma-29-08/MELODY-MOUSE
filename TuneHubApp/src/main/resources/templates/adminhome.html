@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link th:href="@{adminhome.css}" rel="stylesheet">
+</head>
+<body>
+
+<header>
+<h1>Admin DashBoard</h1>
+<nav>
+            <ul>
+            <!--  mapping with nav controller which contains the name  map-songs -->
+                <li><a href="map-songs">ADD SONGS</a></li>
+                <!-- mapping with song controller which contains the name  map-viewsongs -->
+                 <li><a href="/map-viewsongs">VIEW SONGS</a></li>
+                
+                <!-- mapping to crate play list method in controller class -->
+                <li><a href="/map-playlist">CREATE PLAYLIST</a></li>
+                
+                <!-- mapping with playlist controller which contains the name map-viewplaylist -->
+                
+                <li><a href="/map-viewplaylist">VIEW PLAYLIST</a></li>
+            </ul>
+        </nav>
+</header>
+
+<div class="content">
+        <p>MELODY MOUSE welcomes admin to admin page</p>
+    </div>
+
+<!-- <a href="/map-update">UPDATE SONGS</a> -->
+</body>
+</html>

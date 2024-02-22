@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+
+html {
+    height: 100%;
+    background-image:url('https://images.pexels.com/photos/783243/pexels-photo-783243.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Replace 'background-image.jpg' with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    overflow: hidden; /* Prevent body content from overflowing */
+    display: flex;
+    flex-direction: column;
+     min-height: 100vh; 
+}
+
+
+
+
+
+.container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    flex:1;
+}
+.logo img {
+    max-width: 50px; /* Decrease the maximum width of the logo */
+    height: auto; /* Maintain aspect ratio */
+}
+.nav {
+    position: absolute;
+    top: 7%;
+    left: 65%; /* Adjust the left position as needed */
+    transform: translateY(-50%);
+}
+
+.logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav ul li {
+    margin-right: 20px;
+}
+
+.nav ul li:last-child {
+    margin-right: 0;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    transition:background-color 0.3s;
+}
+nav ul li a:hover {
+    color:white; /* Change background color on hover */
+}
+
+.content {
+    padding: 20px;
+}
+main {
+    padding: 20px;
+     flex: 1; 
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1px;
+    text-align: center;
+    margin-top: auto;
+}
+p{
+	color:white;
+}

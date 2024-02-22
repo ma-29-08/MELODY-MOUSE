@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+<link th:href="@{register.css}" rel="stylesheet">
+<title>REGISTER</title>
+</head>
+<body>
+<form action="/register" method="post" class="form">
+
+<input type="text" name="username"/ placeholder="username" class="input" required/>
+
+
+<input type="email" name="email" placeholder="email" class="input" required/>
+
+
+<input type="password" name="password" placeholder="password" class="input" required />
+
+
+Male<input type="radio" name="gender" value="male"/  class="radio" required>
+Female<input type="radio" name="gender" value="female"  class="radio"  required/>
+Others<input type="radio" name="gender" value="other"  class="radio" required />
+<br />
+
+Admin<input type="radio" name="role" value="admin" required>
+Customer<input type="radio" name="role" value="customer" required>
+
+
+<textarea name="address" placeholder="address" class="input"></textarea>
+<input type="submit" value="REGISTER" class="btn"/>
+</form>
+
+</body>
+</html>
